@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Arrays</h2>
+
+    <p></p>
+
+    <p id="demo"></p>
+
+    <script>
+      var inAscOrder = (arr) => arr.slice(1).every((e, i) => e > arr[i]);
+
+      console.log(inAscOrder([1, 2, 4, 7, 19]));
+      console.log(inAscOrder([1, 2, 3, 4, 5]));
+      console.log(inAscOrder([1, 6, 10, 18, 2, 4, 20]));
+      console.log(inAscOrder([9, 8, 7, 6, 5, 4, 3, 2, 1]));
+    </script>
+  </body>
+</html>

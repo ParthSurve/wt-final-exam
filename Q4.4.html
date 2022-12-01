@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const UserCart = [
+        { productId: 1, productName: "Mobile", price: 70000 },
+        { productId: 1, productName: "Mobile", price: 70000 },
+        { productId: 2, productName: "Laptop", price: 100000 },
+        { productId: 5, productName: "Shoes", price: 35000 },
+      ];
+      const sum = UserCart.reduce(function (acc, obj) {
+        return acc + obj.price;
+      }, 0);
+      console.log(sum);
+    </script>
+  </body>
+</html>
